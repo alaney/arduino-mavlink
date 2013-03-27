@@ -41,6 +41,7 @@ void loop() {
 // Send the message with the standard UART send function
 // uart0_send might be named differently depending on
 // the individual microcontroller / library in use.
+     delay(1000);
      Serial.write(buf, len);
      comm_receive();
 }
